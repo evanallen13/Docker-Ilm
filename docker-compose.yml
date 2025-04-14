@@ -2,9 +2,7 @@
 services:
   my-app:
     depends_on:
-      - llm  # this triggers injection of LLM_URL & LLM_MODEL
-             # environment variables from llm service execution
-
+      - llm  
   llm:
     provider:
       type: model
